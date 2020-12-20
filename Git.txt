@@ -1,2 +1,18 @@
 git reset --hard FETCH_HEAD
 放弃本地的文件修改和提交，FETCH_HEAD表示上一次成功git pull之后形成的commit点
+再运行git pull, 使本地与远程仓库对应分支保持一致
+
+git reset --hard commit_id
+回退到commit_id指定的版本
+
+git checkout -- <file>
+放弃本地工作区的指定文件的修改，让这个文件回到最近一次git commit或git add时的状态
+如果该文件已经通过git add，添加到了暂存区，可以使用命令：
+git reset HEAD <file>
+将暂存区的修改回退到工作区
+
+git checkout -b dev origin/dev
+在本地创建一个dev分支并与远程仓库有dev分支同步，并切换到本地dev分支
+
+git add <file>  把文件修改添加到暂存区
+git rm <file>   用于从暂存区删除一个文件
