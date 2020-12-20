@@ -14,10 +14,11 @@ git reset HEAD <file>
 git checkout -b dev origin/dev
 在本地创建一个dev分支并与远程仓库有dev分支同步，并切换到本地dev分支
 
+git branch -d feature1
+删除feature1分支
+
 git add <file>  把文件修改添加到暂存区
 git rm <file>   用于从暂存区删除一个文件
 
 git merge b  将b分支合并到当前分支,保留当前分支和b分支的commit记录并形成一个新的commit点，git log会保留原始commit的时间顺序
 git rebase b 将b分支合并到当前分支,当前分支的commit点移到最后，git log与原始提交时间不能对应
-
-
