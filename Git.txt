@@ -1,0 +1,2 @@
+git reset --hard FETCH_HEAD
+放弃本地的文件修改和提交，FETCH_HEAD表示上一次成功git pull之后形成的commit点
