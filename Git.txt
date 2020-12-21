@@ -29,3 +29,8 @@ git rm <file>   用于从暂存区删除一个文件
 git merge b  将b分支合并到当前分支,保留当前分支和b分支的commit记录并形成一个新的commit点，git log会保留原始commit的时间顺序
 git rebase b 将b分支合并到当前分支,当前分支的commit点移到最后，git log与原始提交时间不能对应
 
+git config --global user.name "yourusername"
+git config --global user.email  "youremail"
+ssh-keygen -t rsa     // generate ssh private and public key pair
+ssh -T git@github.com  // test whether set the github SSH OK 
+
